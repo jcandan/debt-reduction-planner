@@ -8,6 +8,9 @@ services:
     globals:
       '@vue/cli': latest
       '@vue/cli-service-global': latest
+    build:
+     - npm install
+    command: npm run serve
 tooling:
   npm:
     service: node
