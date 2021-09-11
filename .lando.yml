@@ -1,0 +1,15 @@
+name: debt-reduction-planner
+proxy:
+  node:
+    - debt-reduction-planner.lndo.site:8080
+services:
+  node:
+    type: node:14
+    globals:
+      '@vue/cli': latest
+      '@vue/cli-service-global': latest
+tooling:
+  npm:
+    service: node
+  vue:
+    service: node
